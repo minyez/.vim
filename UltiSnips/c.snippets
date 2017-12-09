@@ -9,3 +9,22 @@ $0
 
 MPI_Finalize();
 endsnippet
+
+snippet trifor "triple for loop" b
+for (${1:i} = 0; $1 < ${4:counta}; ++$1) {
+    for (${2:j} = 0; $2 < ${5:countb}; ++$2) {
+        for (${3:k} = 0; $3 < ${6:countc}; ++$3) {
+            $0
+        }
+    }
+}
+endsnippet
+
+snippet malloc "malloc"
+(${1:int}*)malloc(sizeof($1)$0);
+endsnippet
+
+snippet barrier "MPI_Barrier" b
+MPI_Barrier(${1:MPI_COMM_WORLD});
+$0
+endsnippet
