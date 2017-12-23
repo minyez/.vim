@@ -63,6 +63,7 @@ set anti enc=utf-8
 "set guifont=LucidaMono
 "set guifont=UbuntuMono
 
+set shell=/bin/bash
 
 " Disable arrows
 " habbit destroying
