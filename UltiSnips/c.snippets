@@ -1,6 +1,6 @@
 snippet mpiinit "initialize MPI environment" b
 int ${1:myid},${2:nproc};
-
+/* Initialize MPI */
 MPI_Init(&argc,&argv);
 MPI_Comm_rank(MPI_COMM_WORLD,&$1);
 MPI_Comm_size(MPI_COMM_WORLD,&$2);

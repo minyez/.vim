@@ -42,8 +42,8 @@ autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 " => Shell header
 """""""""""""""""""""""""""""""
 autocmd bufnewfile *.sh so /home/stevezhang/header/sh_header.txt
-autocmd bufnewfile *.sh exe "1," . 12 . "g/File Name :.*/s//File Name : " .expand("%")
-autocmd bufnewfile *.sh exe "1," . 12 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
+autocmd bufnewfile *.sh exe "1," . 8 . "g/File Name :.*/s//File Name : " .expand("%")
+autocmd bufnewfile *.sh exe "1," . 8 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.sh execute "normal ma"
 " Used to change the Modified date.
 " Not used any more, since it is not that necessary

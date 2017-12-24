@@ -72,3 +72,16 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" 寄存器复制粘贴
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+y
+
+" 映射ESC
+imap fj <esc>
+imap jf <esc>
+
+" 命令模式启动
+nnoremap : ;
+nnoremap ; :

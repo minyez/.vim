@@ -58,15 +58,17 @@ let g:UltiSnipsJumpForardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 
-
 " ==== Tabular ====
-let mapleader=','
-if exists(":Tabularize")
-    " align : in normal and visual mode
-	" by using a=
-    nmap <Leader>a= :Tabularize /=<CR>
-    vmap <Leader>a= :Tabularize /=<CR>
-endif
+" align : in normal and visual mode
+" by using a= to align equal mark
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+" by using a: to align after colon mark
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+" by using a\, (escape) to align comma mark
+nmap <Leader>a\, :Tabularize /,<CR>
+vmap <Leader>a\, :Tabularize /,<CR>
 
 " ==== syntaxstic ====
 set statusline+=%#warningmsg#
