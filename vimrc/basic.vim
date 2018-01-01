@@ -55,6 +55,7 @@ endif
 set laststatus=2
 
 " 忽略编译文件
+set wildmenu
 set wildignore=*.o,*~,*.pyc,*.mod
 
 " 设置Source Code Pro字体
@@ -71,17 +72,29 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+" 普通模式下，方向键改为切换窗口
+noremap <Up>    <C-w>k
+noremap <Down>  <C-w>j
+noremap <Left>  <C-w>h
+noremap <Right> <C-w>l
+
+" 普通模式下，用tab键导航标签页切换
+noremap <tab> gt
+noremap <s-tab> gT
 
 " 寄存器复制粘贴
 noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
-noremap <Leader>P "+y
+noremap <Leader>P "+p
 
 " 映射ESC
 imap fj <esc>
 imap jf <esc>
+vmap fj <esc>
+vmap jf <esc>
 
-" 命令模式启动
+" 调用命令模式
 nnoremap : ;
 nnoremap ; :
+

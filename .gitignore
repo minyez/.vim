@@ -1,5 +1,4 @@
-# ignore plugins within bundle, except Vundle
+# ignore plugins within bundle
 # it is not suggested to change anything manually in bundle directory
-/bundle/*/
-!/bundle/Vundle.vim/
+/bundle/*
 .netrwhist

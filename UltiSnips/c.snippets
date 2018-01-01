@@ -28,3 +28,12 @@ snippet barrier "MPI_Barrier" b
 MPI_Barrier(${1:MPI_COMM_WORLD});
 $0
 endsnippet
+
+snippet comb "block comment" b
+/* ${1:comment} */
+$0
+endsnippet
+
+snippet com "inline comment"
+/* $0 */
+endsnippet
