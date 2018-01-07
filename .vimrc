@@ -1,4 +1,4 @@
 let mapleader = ","
-source /home/stevezhang/.vim/vimrc/plugin.vim
-source /home/stevezhang/.vim/vimrc/basic.vim
-source /home/stevezhang/.vim/vimrc/filehead.vim
+source ~/.vim/vimrc/plugin.vim
+source ~/.vim/vimrc/basic.vim
+source ~/.vim/vimrc/filehead.vim
