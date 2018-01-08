@@ -1,4 +1,3 @@
 # ignore plugins within bundle
 # it is not suggested to change anything manually in bundle directory
-/bundle/*
 .netrwhist
