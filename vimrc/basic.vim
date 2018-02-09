@@ -90,11 +90,12 @@ noremap <Leader>P "+p
 
 " 映射ESC
 imap fj <esc>
-imap jf <esc>
 vmap fj <esc>
-vmap jf <esc>
 
 " 调用命令模式
 nnoremap : ;
 nnoremap ; :
+
+" 映射:lclose以关闭syntastics下方编译结果窗口
+" nnoremap <Leader>lc :lclose<cr>
 
